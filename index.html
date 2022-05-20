@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notebook</title>
+    <link rel="stylesheet" href="src/styles/styles.css">
+</head>
+
+<body>
+    <main class="container">
+        <section id="notebook" class="notebook-container">
+            <h1>Contactos</h1>
+            <table class="notebook">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellidos</th>
+                    <th>Teléfono</th>
+                    <th>Correo</th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>Luis</td>
+                    <td>Rodríguez</td>
+                    <td>87878787</td>
+                    <td>luis@gmail.com</td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="container_modal_form">
+            <form>
+                <h3>Agrega un nuevo contacto</h3>
+                <div class="form-group">
+                    <input placeholder="Nombre" type="text" name="name" id="name">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Apellidos" type="text" name="lastName" id="lastName">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Teléfono" type="tel" name="telephone" id="telephone">
+                </div>
+                <div class="form-group">
+                    <input placeholder="Correo" type="email" name="email" id="email">
+                </div>
+                <button class="btn btn-modal-success" type="submit">Guardar contacto</button>
+            </form>
+        </section>
+
+        <section id="container_modal">
+            <div class="modal">
+                <h5>¿Está seguro que desea eliminar el contacto?</h5>
+                <hr>
+                <div class="btn-container">
+                    <button class="btn btn-modal-success" type="button">Aceptar</button>
+                    <button class="btn btn-modal-cancel" type="button">Cancelar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="src/js/app.js"></script>
+</body>
+
+</html>
