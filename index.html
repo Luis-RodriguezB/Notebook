@@ -11,8 +11,10 @@
 
 <body>
     <main class="container">
+        <h1>Agenda telefónica</h1>
         <section id="notebook" class="notebook-container">
-            <h1>Contactos</h1>
+            <h2>Contactos</h2>
+            <button id="add-contact" class="add-button" title="Añadir contacto" type="button">Agregar contacto <i class="fa-solid fa-circle-plus"></i></button>
             <table class="notebook">
                 <tr>
                     <th>Nombre</th>
@@ -20,13 +22,6 @@
                     <th>Teléfono</th>
                     <th>Correo</th>
                     <th></th>
-                </tr>
-                <tr>
-                    <td>Luis</td>
-                    <td>Rodríguez</td>
-                    <td>87878787</td>
-                    <td>luis@gmail.com</td>
-                    <td></td>
                 </tr>
             </table>
         </section>
@@ -36,17 +31,22 @@
                 <h3>Agrega un nuevo contacto</h3>
                 <div class="form-group">
                     <input placeholder="Nombre" type="text" name="name" id="name">
+                    <p id="error-message_name" class="text-error">El nombre es requerido, no se permiten números.</p>
                 </div>
                 <div class="form-group">
                     <input placeholder="Apellidos" type="text" name="lastName" id="lastName">
+                    <p id="error-message_lastName" class="text-error">Los apellidos es requerido, no se permiten números.</p>
                 </div>
                 <div class="form-group">
                     <input placeholder="Teléfono" type="tel" name="telephone" id="telephone">
+                    <p id="error-message_telephone" class="text-error">El teléfono es requerido, no se permiten caracteres y tiene que ser entre 8 a 11 números.</p>
                 </div>
                 <div class="form-group">
                     <input placeholder="Correo" type="email" name="email" id="email">
+                    <p id="error-message_email" class="text-error">El correo es requerido, debe ser un correo valido.</p>
                 </div>
-                <button class="btn btn-modal-success" type="submit">Guardar contacto</button>
+                <p id="error-message">Por favor completar todos los campos</p>
+                <button id="btn-submit" class="btn btn-modal-success" type="submit">Guardar contacto</button>
             </form>
         </section>
 
@@ -63,6 +63,7 @@
     </main>
 
     <script src="src/js/app.js"></script>
+    <script src="https://kit.fontawesome.com/95fe839526.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
