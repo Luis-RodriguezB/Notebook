@@ -81,7 +81,6 @@
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    clearClass();
     
     if (
       isValidInput.name &&
@@ -100,6 +99,7 @@
 
       addContactToTable(formProps);
 
+      clearClass();
       closeOpenModal(modalForm, "none");
       form.reset();
     } else {
