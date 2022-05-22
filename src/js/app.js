@@ -30,8 +30,8 @@
   };
 
   const inputsExpression = {
-    name: /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/,
-    lastName: /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/,
+    name: /^[a-zA-ZÀ-ÿ\s]{2,30}$/,
+    lastName: /^[a-zA-ZÀ-ÿ\s]{2,70}$/,
     telephone: /^\d{8,11}$/,
     email: /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/,
   };
